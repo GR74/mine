@@ -50,9 +50,11 @@ def calculate_neurovascular_variables(EEG_CMRO2):
         DeltaLAC_Data[str(Routing)] = []
         
 
-        for Timestep in range(512):
-            
+        for Timestep in range(len(EEG_CMRO2[Routing])):
+
             delta_cmro2_prime = EEG_CMRO2[Routing][Timestep]
+            
+            
             
             oef = oef0 * (1+delta_cmro2_prime)/(1+ n * delta_cmro2_prime)
         

@@ -1,3 +1,5 @@
+from EEG_DistanceFunc import DistanceFunc
+
 def EEG_Plotting(Data_val, Timestep_Select, Trial_Select = 1, NodeNum = 100, ElectrodeList = ['Fp1', 'Fp2', 'F3', 'F4', 'T5', 'T6', 'O1', 'O2', 'F7', 'F8', 'C3', 'C4', 'T3', 'T4', 'P3', 'P4']):
     """
 
@@ -135,6 +137,9 @@ def EEG_Plotting(Data_val, Timestep_Select, Trial_Select = 1, NodeNum = 100, Ele
     #ax.scatter(xs=[sublist[0] for sublist in PlotList],ys=[sublist[1] for sublist in PlotList],zs=[sublist[2] for sublist in PlotList], s=5, c='b', marker="o", label='Space Filling')
     plot = ax.scatter(xs=[sublist[0] for sublist in EEG_Nodes_List],ys=[sublist[1] for sublist in EEG_Nodes_List],zs=[sublist[2] for sublist in EEG_Nodes_List], s=10, c=PlotDataSet, marker="o", label='10-20 Nodes', cmap = 'Reds')
     fig.colorbar(plot)
+    plt.title("3D Neurovascular Concentration Plot")
+    plt.show()
+
     
     #Returns a list of the the full Data and coordinates of all points in the system.
     return [PlotDataSet, EEG_Nodes_List]
