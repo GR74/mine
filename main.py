@@ -1,6 +1,3 @@
-# Add this only if you're running from outside the THINKTANK directory
-# import sys
-# sys.path.append(r'C:\Users\gowri\thinktank\THINKTANK')
 
 from EEG_Implement_Welch import EEG_Implement_Welch
 from EEG_normalizedGamma_CMRO2 import plot_normalized_gamma_across_channels
@@ -9,8 +6,8 @@ from EEG_Plotting import EEG_Plotting
 
 
 if __name__ == '__main__':
-    # Path to your EEG input file (make sure the format matches expectations)
-    EEG_file_path = 'C:/Users/gowri/thinktank/THINKTANK/last_time_testing_for_now.txt'
+    # Path to your EEG input file (make sure the format matches expectations) (change it according to your storage pls)
+    EEG_file_path = 'C:/Users/gowri/thinktank/thinkthank_with_changes_and_clearmind/Example_EEG.txt'
 
     # Step 1: Convert raw EEG to Welch spectra and get trial count
     ExampleCase = EEG_Implement_Welch(EEG_file_path)
