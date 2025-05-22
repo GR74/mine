@@ -1,5 +1,5 @@
 # THINKTANK
-
+(Revised code from Thinktank team) Needed to change up a line or two and added main.py with phonemizer output as options to use
 Contains functions utilized for the THINKTANK team for application in neural chemical modeling.
 
 ----------------------------------------------------------------------------------------------------------------------------------
